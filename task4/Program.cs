@@ -4,10 +4,14 @@
 
 Console.WriteLine("Input number");
 int number = Convert.ToInt32(Console.ReadLine());
-int evenNumber = 2;
+int OrdinalNumber = 1;
 
- while (evenNumber<=number)
+if (number>1) {
+   while (OrdinalNumber<=number)
 {
-     Console.Write(evenNumber + " ");
-    evenNumber=evenNumber + 2;
- }
+   int rem = OrdinalNumber % 2;
+      if (rem == 0) {Console.WriteLine(OrdinalNumber + " ");
+         OrdinalNumber =OrdinalNumber+1;}
+      else { OrdinalNumber =OrdinalNumber+1;}
+} 
+}
